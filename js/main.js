@@ -238,7 +238,7 @@ const scrollReveal = ScrollReveal({
     distance: "60px",
     duration: 2500,
     delay: 400,
-    // reset: true, // animation repeat
+    reset: true, // animation repeat
 });
 
 scrollReveal.reveal(
@@ -254,6 +254,7 @@ scrollReveal.reveal(
     `.skills__content:nth-child(1), .contact__content:nth-child(1)`,
     {
         origin: "left",
+        interval: 200,
     }
 );
 
@@ -261,6 +262,7 @@ scrollReveal.reveal(
     `.skills__content:nth-child(2), .contact__content:nth-child(2)`,
     {
         origin: "right",
+        interval: 200,
     }
 );
 
@@ -268,3 +270,28 @@ scrollReveal.reveal(`.qualification__content`, {
     origin: "bottom",
     interval: 200,
 });
+
+scrollReveal.reveal(
+    `.home__social-link:nth-child(1), .services__card:nth-child(1), .footer__home, .footer__social-link:nth-child(1)`,
+    {
+        delay: 600,
+        origin: "left",
+        interval: 100,
+    }
+);
+scrollReveal.reveal(
+    `.home__social-link:nth-child(2), .services__card:nth-child(2), .footer__skills, .footer__social-link:nth-child(2)`,
+    {
+        delay: 600,
+        origin: "top",
+        interval: 200,
+    }
+);
+scrollReveal.reveal(
+    `.home__social-link:nth-child(3), .services__card:nth-child(3), .footer__projects, .footer__social-link:nth-child(3) `,
+    {
+        delay: 600,
+        origin: "right",
+        interval: 300,
+    }
+);
