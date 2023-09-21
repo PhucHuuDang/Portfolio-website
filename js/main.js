@@ -2,7 +2,7 @@ var navClose = document.querySelector(".nav__close");
 var navToggle = document.querySelector(".nav__toggle");
 var navMenu = document.querySelector(".nav__menu");
 var bodyClick = document.body;
-console.log(bodyClick);
+// console.log(bodyClick);
 
 if (navToggle) {
     navToggle.addEventListener("click", () => {
